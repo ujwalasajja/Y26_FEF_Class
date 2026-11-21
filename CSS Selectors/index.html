@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <link rel = "stylesheet" href ="style.css">
+</head>
+<body>
+    <h1 id="heading1">CSS SELECTOR DEMONSTRATION1</h1>
+    <h1 id="heading2">CSS SELECTOR DEMONSTRATION2</h1
+         <h2>2. Class Selector</h2>
+    <p class="demo">First paragraph using class selector</p>
+    <p class="demo1">Second paragraph using the same class</p>
+    <h2>3. Grouping Selector</h2>
+    <p>This paragraph is styled using a grouping selector</p>
+    <h2>4. Descendant and Child Selectors</h2>
+     <div class="container">
+
+        <!-- Direct child of div -->
+        <p>Direct child paragraph</p>
+
+        <section>
+            <!-- Descendant but not direct child -->
+            <p>Nested paragraph inside section</p>
+        </section>
+
+    </div>
+    <!-- Sibling selectors -->
+    <h2>5. Sibling Selectors</h2>
+
+    <h3>Sibling Selector Heading</h3>
+    <p>First paragraph immediately after h3</p>
+    <p>Second paragraph after h3.</p>
+    <p>Third paragraph after h3.</p>
+    <!-- Attribute selectors -->
+    <h2>6. Attribute Selectors</h2>
+
+    <input type="text" placeholder="Enter your name">
+    <br><br>
+
+    <input type="password" placeholder="Enter password">
+    <br><br>
+
+    <input type="email" placeholder="Enter email">
+    <br><br>
+
+    <a href="https://www.google.com" target="_blank">
+        Visit Google
+    </a>
+
+    <!-- Pseudo-class selectors -->
+    <h2>7. Pseudo-Class Selectors</h2>
+
+    <button>Move Mouse Over Me</button>
+
+    <br><br>
+
+    <input type="text" placeholder="Click here to focus">
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ul>
+
+    <!-- Checked and disabled pseudo-classes -->
+    <input type="checkbox" checked> Java
+    <br><br>
+
+    <input type="checkbox"> Python
+    <br><br>
+
+    <input type="text" value="Disabled Input" disabled>
+
+    <!-- Pseudo-element selectors -->
+    <h2>8. Pseudo-Element Selectors</h2>
+
+    <p class="pseudo">
+        CSS pseudo-elements help us style specific parts of an element.
+        They are useful for improving the appearance of web pages.
+    </p>
+
+    <h3 class="after">Pseudo Element Example</h3>
+
+    
+    <!-- ID selector -->
+    <p id="para" class="text">Welcome</p>
+
+</body>
+</html>

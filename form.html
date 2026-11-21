@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body bgcolor="lightyellow">
+    <h1> Registration Form </h1>
+    <form action="a" method="post">
+<fieldset> 
+        
+        <legend>Personal Information</legend> 
+        <br><br>
+
+        <label>Student Name:</label> 
+        <input type="text" name="studentname" 
+               placeholder="Enter your name" required> 
+        <br><br> 
+
+        <label>Email:</label> 
+        <input type="email" name="email" 
+               placeholder="Enter your email" required> 
+        <br><br> 
+
+        <label>Password:</label> 
+        <input type="password" 
+               placeholder="Enter password" required>
+        
+ <br><br> 
+        <label>Age:</label> 
+        <input type="number" 
+        placeholder="Enter Age"
+        name="age" min="16" max="50"> 
+        <br><br> 
+
+        <label>Gender:</label> 
+        <input type="radio" name="gender" value="Male"> Male 
+        <input type="radio" name="gender" value="Female"> Female 
+        <br><br> 
+
+</fieldset> 
+<br><br> 
+        <label>Skills:</label> 
+        <input type="checkbox" name="skills" value="HTML"> HTML 
+        <input type="checkbox" name="skills" value="CSS"> CSS 
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript 
+        <br><br> 
+        <label>Department:</label> 
+        <select name="department"> 
+            <option value="">Select Department</option> 
+            <option value="CSE">CSE</option> 
+            <option value="ECE">ECE</option> 
+            <option value="IT">IT</option> 
+            <option value="EEE">EEE</option> 
+        </select> 
+ 
+        <br><br> 
+<label>Select a Course:</label> 
+ 
+    <input list="courses" name="course"> 
+ 
+    <datalist id="courses"> 
+        <option value="CSE"> 
+        <option value="ECE"> 
+        <option value="IT"> 
+        <option value="EEE"> 
+    </datalist> 
+<br><br> 
+        <label>Date of Birth:</label> 
+        <input type="date" name="dob"> 
+ 
+        <br><br> 
+ 
+        <label>Address:</label> 
+        <textarea name="address" rows="4" cols="30" 
+                  placeholder="Enter your address"></textarea> 
+ 
+        <br><br> 
+ 
+        <label>Upload Photo:</label> 
+        <input type="file" name="photo"> 
+ 
+        <br><br> 
+ 
+        <input type="submit" value="Register"> 
+        <input type="reset" value="Clear"> 
+ 
+    </form>
+    
+</body>
+</html>

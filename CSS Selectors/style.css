@@ -1,0 +1,190 @@
+* {
+    margin: 200;
+    padding: 150;
+    box-sizing: border-box;
+}
+h1{
+    color:red;
+}
+#heading1{
+    color:blue;
+}
+.demo {
+    color: green;
+    font-weight: bold;
+    background-color: lightgreen;
+    padding: 8px;
+}
+h2, button, a {
+    font-family: Arial;
+    color: purple;
+}
+/* 6. Descendant Selector (Space)
+   Selects all p elements inside div at any depth */
+.container p {
+    color: pink;
+    background-color: lightyellow;
+    padding: 8px;
+}
+/* 7. Child Selector (>)
+   Selects only direct p children of div */
+.container > p {
+    color: orange;
+    font-weight: bold;
+}
+/* 8. Adjacent Sibling Selector (+)
+   Selects only the first p immediately after h3 */
+h3 + p {
+    color: brown;
+    font-weight: bold;
+}
+
+/* 9. General Sibling Selector (~)
+   Selects all p siblings following h3 */
+h3 ~ p {
+    background-color: lightgoldenrodyellow;
+}
+/* Selects input having exact type="text" */
+input[type="text"] {
+    background-color: lightyellow;
+    padding: 8px;
+}
+
+/* Selects input having exact type="password" */
+input[type="password"] {
+    background-color: lightblue;
+    padding: 8px;
+}
+
+/* Selects input having exact type="email" */
+input[type="email"] {
+    background-color: lightgreen;
+    padding: 8px;
+}
+
+/* Selects elements having a specified attribute */
+input[placeholder] {
+    border: 2px solid gray;
+}
+
+/* Selects target attribute values beginning with a value */
+a[target^="_"] {
+    text-decoration: none;
+}
+
+/* Selects href values ending with a specified text */
+a[href$="com"] {
+    font-weight: bold;
+}
+
+/* Selects attribute values containing specified text */
+input[type*="pass"] {
+    border-radius: 5px;
+}
+/* :hover
+   Applies style when mouse moves over button */
+button:hover {
+    background-color: orange;
+    color: rgb(208, 144, 153);
+}
+
+/* :active
+   Applies style while button is being clicked */
+button:active {
+    background-color: rgb(31, 31, 204);
+}
+
+/* :focus
+   Applies style when input receives focus */
+input:focus {
+    outline: 2px solid lightpink;
+    background-color: lightgreen;
+}
+
+/* :first-child
+   Selects the first child of its parent */
+li:first-child {
+    color: violet;
+    font-weight: bold;
+}
+
+/* :last-child
+   Selects the last child of its parent */
+li:last-child {
+    color: rgb(29, 147, 174);
+}
+
+/* :nth-child(n)
+   Selects a child based on its position */
+li:nth-child(2) {
+    background-color: rgb(201, 217, 62);
+}
+
+/* :checked
+   Selects checked checkbox elements */
+input:checked {
+    accent-color: rgb(191, 80, 126);
+}
+
+/* :disabled
+   Selects disabled input elements */
+input:disabled {
+    background-color: rgb(160, 18, 113);
+    color: lightpink;
+}
+
+/* :not()
+   Selects inputs that are not checkboxes */
+input:not([type="checkbox"]) {
+    border-radius: 4px;
+}
+
+/* ::first-letter
+   Styles the first letter of paragraph */
+.pseudo::first-letter {
+    font-size: 30px;
+    color: rgb(61, 100, 156);
+    font-weight: bold;
+}
+
+/* ::first-line
+   Styles the first line of paragraph */
+.pseudo::first-line {
+    color: rgb(24, 13, 144);
+}
+
+/* ::before
+   Inserts content before heading content */
+.after::before {
+    content: "★ ";
+    color: rgb(236, 186, 92);
+}
+
+/* ::after
+   Inserts content after heading content */
+.after::after {
+    content: "!";
+    color: rgb(255, 0, 111);
+}
+
+/* ::selection
+   Styles text selected by the user */
+::selection {
+    background-color: rgb(13, 179, 205);
+    color: rgb(157, 196, 58);
+}
+
+/* Element selector - lowest specificity */
+p {
+    color: rgb(155, 197, 27);
+}
+
+/* Class selector - higher than element selector */
+.text {
+    color: rgb(136, 122, 184);
+}
+
+/* ID selector - higher than class selector */
+#para {
+    color: rgb(114, 19, 19);
+}

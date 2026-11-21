@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h2> HTML TABLE TAG EXAMPLE </h2>
+    <table border="1">
+        <caption> Student Marks</caption>
+
+        <colgroup>
+            <col style="background-color:lightblue">
+            <col style="background-color:rgb(221, 238, 144)">
+            <col style="background-color:pink">
+        </colgroup>
+
+        <thead>
+        <tr> 
+            <th> Student Name</th>
+            <th> Subject</th>
+            <th> Marks</th>
+        </tr>
+       </thead>
+
+       <tbody>
+         <tr>
+            <td rowspan="2" style="padding:20px;">Dileep</td>
+            <td>HTML</td>
+            <td>95</td>
+        </tr>
+         <tr>
+            
+            <td>DSA</td>
+            <td>93</td>
+        </tr>
+         <tr>
+            <td rowspan="2" style="padding:20px;">Ujwala</td>
+            <td>HTML</td>
+            <td>97</td>
+        </tr>
+         <tr>
+            
+            <td>DSA</td>
+            <td>95</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+         <tr>
+            <th colspan="2" style="padding:10px;">Total Students</th>
+            <td>2</td>
+        </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>
